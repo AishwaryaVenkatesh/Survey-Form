@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html>
+<style>
+	h1 { 
+		font-style: sans-serif;
+		font-size: 24px;
+		text-align: center;
+	}
+	h3 { 
+		font-style: sans-serif;
+		font-size: 12px;
+		color: orange;
+		text-align: center;
+	}
+</style>
+	
 <head> </head>
+	
 <body>
-<h3>Passport Renewal Application - Get Started</h3>
-<h4>Have your current passport ready</h4>
+<h1>Passport Renewal Application - Get Started</h3>
+<h3>Have your current passport ready</h4>
 <div>
-	<input type="text" name="firstname" validateType="text" isOptional="false" placeholder="First name" required/>
+	<input type="text" placeholder="firstname" validateType="text" isOptional="false" placeholder="First name" required/>
 </div>
 
 <div>
-	<input type="text" name="lastname" validateType="text" isOptional="false" placeholder="Last Name" required/>
+	<input type="text" placeholder="lastname" validateType="text" isOptional="false" placeholder="Last Name" required/>
 </div>
 						
 	
 <div>
-	<input type="text" name="email" validateType="email" isOptional="false" placeholder="Email" required/>
+	<input type="text" placeholder="email" validateType="email" isOptional="false" placeholder="Email" required/>
 </div>
 						
 <div>
-	<input type="text" name="zipcode" validateType="zipCode" isOptional="false" placeholder="Zip Code" required/>
+	<input type="text" placeholder="zipcode" validateType="zipCode" isOptional="false" placeholder="Zip Code" required/>
 </div>
 		
 <div>
-	<button style="text-align: center; type="submit">SUBMIT</button>
+	<button style="text-align: center" type="submit">SUBMIT</button>
+	<form action="/url-where-you-want-to-submit-form-data"></form>
 </div>
 
 </body>
