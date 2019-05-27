@@ -1,129 +1,181 @@
 <!DOCTYPE html>
 <html>
-<style>
-	h1 { 
-		font-style: sans-serif;
-		font-size: 24px;
-		color: green;
-		text-align: center;
-	}
-	h3 { 
-		font-style: sans-serif;
-		font-size: 18px;
-		color: greenyellow;
-		text-align: center;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-</style>
-	
-<head> </head>
-	
-<body>
-<h1>Welcome to Mediclaim's Satisfaction Survey</h3>
+  <style>
+    h1 {
+      font-style: sans-serif;
+      font-size: 24px;
+      color: green;
+      text-align: center;
+    }
+    h3 {
+      font-style: sans-serif;
+      font-size: 18px;
+      color: green;
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
 
-<h3>
-Thank you for taking the time to complete our survey. Your feedback about your visit experience helps us to continuously improve our service and provide you with the best possible experience.
-</h3> 
-	
-<!--survey questions-->
+    .thin-red-border {
+      border-color: red;
+      border-width: 5px;
+      border-style: solid;
+    }
+  </style>
 
-<div>	
-	<p> 
-		<b>Please enter your first name </b>
-		<b> <input type="text" placeholder="First Name" validateType="text" isOptional="false"></b>
-	</p>
-</div>
+  <head> </head>
 
-<div>
-	<p>
-		<b>Please enter your last name </b>
-		<b><input type="text" placeholder="Last Name" validateType="text" isOptional="false"> </b>
-	</p>
-</div>
-						
-	
-<div>
-	<p>
-			<b> Please enter your email </b>
-			<b> <input type="email" placeholder="Email" validateType="email" isOptional="false"> </b>
-	</p>
-</div>
+  <body>
+    <h1>Welcome to Mediclaim's Satisfaction Survey</h1>
 
-<div>
-		Name of the doctor you are seeing:
-		<input type="Text" placeholder="Doctor's name" validateType="text" isOptional="false">
-	</div>
-						
-<div>
-<p> Was the Teladoc medical consultation for you or for a family member? </p>
- <label> 
-  <p>
-		<input type="radio" name="Self">Self
-		<input type="radio" name="Family-member">Family Member
-	</p>
-</label>
-</div>
+    <h3>
+      Thank you for taking the time to complete our survey. Your feedback about
+      your visit experience helps us to continuously improve our service and
+      provide you with the best possible experience.
+    </h3>
 
-<div>
-		<p> How easy was it for you to schedule your visit? </p>
-		 <label> 
-			<p>
-				<input type="radio" name="veryeasy">Very Easy
-				<input type="radio" name="FairlyEasy">Fairy Easy
-				<input type="radio" name="Difficult">Difficult
-			</p>
-		</label>
-		</div>
+    <!--survey questions-->
+    <div class="thin-red-border">
+      <div>
+        <p>
+          <b>Please enter your first name </b>
+          <b
+            ><input
+              type="text"
+              placeholder="First Name"
+              validateType="text"
+              isOptional="false"
+          /></b>
+        </p>
+      </div>
 
-<div>
-	<p> How would you rate the care or treatment you received? </p>
-		<label> 
-		<p>
-				<input type="radio" name="Exceptional">Exceptional
-				<input type="radio" name="Average">Average
-				<input type="radio" name="Poor"> Poor
-		</p>
-		</label>
-</div>
+      <div>
+        <p>
+          <b>Please enter your last name </b>
+          <b
+            ><input
+              type="text"
+              placeholder="Last Name"
+              validateType="text"
+              isOptional="false"
+            />
+          </b>
+        </p>
+      </div>
 
-<div>
-	<p> Would you use the Teladoc service again? </p>
-		<label> 
-		<p>
-			<input type="radio" name="Yes">Yes
-			<input type="radio" name="No">No
-			<input type="radio" name="Unsure">Unsure
-		</p>
-		</label>
-</div>
+      <div>
+        <p>
+          <b> Please enter your email </b>
+          <b>
+            <input
+              type="email"
+              placeholder="Email"
+              validateType="email"
+              isOptional="false"
+            />
+          </b>
+        </p>
+      </div>
 
-<div>
-	<p> How likely are you to recommend our service to a friend (Where 5=Extremely Likely and 1=Not Likely At All) </p>
-		<label> 
-		<p>
-			<input type="radio" name="5">5
-			<input type="radio" name="4">4
-			<input type="radio" name="3">3
-			<input type="radio" name="2">2
-			<input type="radio" name="1">1
-		</p>
-		</label>
-</div>
+      <div>
+        <p>
+          <b>Name of the doctor you are seeing: </b>
+          <b
+            ><input
+              type="Text"
+              placeholder="Doctor's name"
+              validateType="text"
+              isOptional="false"
+            />
+          </b>
+        </p>
+      </div>
 
-<div>
-		<p> Can you please suggest ways to improve our service?  </p>
-			<label> 
-			<p>
-				<input type="text" placeholder="Please enter suggestions here">
-			</p>
-			</label>
-	</div>
-	
+      <div>
+        <p>
+          <b
+            >Was the Teladoc medical consultation for you or for a family
+            member?</b
+          >
+        </p>
+        <label>
+          <p>
+            <input type="radio" name="Self" />Self
+            <input type="radio" name="Family-member" />Family Member
+          </p>
+        </label>
+      </div>
 
-<div>
-	<button style="text-align: center" type="submit">SUBMIT</button>
-	<form action="/url-where-you-want-to-submit-form-data"></form>
-</div>
+      <div>
+        <p>
+          <b>How easy was it for you to schedule your visit?</b>
+        </p>
+        <label>
+          <p>
+            <input type="radio" name="veryeasy" />Very Easy
+            <input type="radio" name="FairlyEasy" />Fairy Easy
+            <input type="radio" name="Difficult" />Difficult
+          </p>
+        </label>
+      </div>
 
-</body>
+      <div>
+        <p>
+          <b>How would you rate the care or treatment you received?</b>
+        </p>
+        <label>
+          <p>
+            <input type="radio" name="Exceptional" />Exceptional
+            <input type="radio" name="Average" />Average
+            <input type="radio" name="Poor" /> Poor
+          </p>
+        </label>
+      </div>
+
+      <div>
+        <p>
+          <b>Would you use the Teladoc service again?</b>
+        </p>
+        <label>
+          <p>
+            <input type="radio" name="Yes" />Yes
+            <input type="radio" name="No" />No
+            <input type="radio" name="Unsure" />Unsure
+          </p>
+        </label>
+      </div>
+
+      <div>
+        <p>
+          <b
+            >How likely are you to recommend our service to a friend (Where
+            5=Extremely Likely and 1=Not Likely At All)</b
+          >
+        </p>
+        <label>
+          <p>
+            <input type="radio" name="5" />5 <input type="radio" name="4" />4
+            <input type="radio" name="3" />3 <input type="radio" name="2" />2
+            <input type="radio" name="1" />1
+          </p>
+        </label>
+      </div>
+
+      <div>
+        <p>
+          <b>Can you please suggest ways to improve our service?</b>
+        </p>
+        <label>
+          <p>
+            <input type="text" placeholder="Suggestions please" />
+          </p>
+        </label>
+      </div>
+
+      <div>
+        <button style="text-align: center" type="submit">SUBMIT</button>
+        <form action="/url-where-you-want-to-submit-form-data"></form>
+      </div>
+    </div>
+  </body>
+</html>
